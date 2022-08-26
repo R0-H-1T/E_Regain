@@ -1,0 +1,35 @@
+
+.loginForm {
+    /* background-color: aliceblue; */
+}
+.loginForm {
+    /* background-color: aquamarine; */
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+}
+
+
+.log {
+    width: 500px;
+    background-color:aquamarine;
+    border-radius: 20px;
+}
+
+.login {
+    margin-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.loginHeader {
+    padding-top: 30px;
+    text-align: center;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.form-outline {
+    background-color:rgb(255, 255, 255);
+    border-radius: 20px;
+}

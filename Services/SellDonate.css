@@ -1,0 +1,44 @@
+body {
+    font-family: "Roboto", sans-serif;
+}
+
+
+.container1 {
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center; 
+}
+
+.headerBoxes {
+    flex-direction: column;
+    height: 1200px;
+    width: 1200px; 
+    background-color: aqua;
+}
+
+.boxes {
+    margin-top: 50px;
+}
+
+img {
+    height: 100px;
+    width: 100px;
+}
+
+.col {
+    background-color: aquamarine;
+    width: 150px;
+    height: 150px;
+    border-style:solid;
+}
+
+
+
+/*
+.header {
+    align-items: center;
+}
+
+.boxes {
+    align-items: center;
+} */

@@ -48,18 +48,21 @@
 
                 <div class="container text-center" id="allRows">
                     <div class="row">
-                        <div class="col">
+
+    
+                            <div class="col">
+                                <a href="" onclick="submit('fridge')">
+                                    <figure class="figure">
+                                        <img src="../Images/fridgeApp.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    </figure>
+    
+                                </a>
+                                <h4 class="itemName">Fridge</h4>
+    
+                            </div>
+    
 
 
-                            <a href="">
-                                <figure class="figure">
-                                    <img src="../Images/fridgeApp.jpeg" class="figure-img img-fluid rounded" alt="...">
-                                </figure>
-
-                            </a>
-                            <h4 class="itemName">Fridge</h4>
-
-                        </div>
                         <div class="col" id="colmid">
                             <a href="">
                                 <figure class="figure">
@@ -207,6 +210,14 @@
 
 <a href="../AboutUs/about.html">About Us</a>
 
+
+<script>
+    function submit(itemName) {
+        let form = document.getElementById("form");
+        itemName
+        form.submit();
+    }
+</script>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js"

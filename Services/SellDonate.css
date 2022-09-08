@@ -1,6 +1,6 @@
 body {
     font-family: "Roboto", sans-serif;
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(237, 237, 237);
 }
 
 
@@ -10,6 +10,7 @@ body {
     justify-content: center;
     height: 200px;
     background-color:rgb(119, 198, 2);
+    
 }
 .headerName {
     margin-top: 65px;
@@ -22,6 +23,7 @@ body {
 
 .header {
     background-color:  rgb(119, 198, 2);
+    color: black;
     
     /* height: 100px; */
 }
@@ -29,13 +31,14 @@ body {
     /* background-color: antiquewhite; */
     display: flex;
     justify-content: center; 
+    /* height: 4000px; */
 }
 
 .headerBoxes {
     flex-direction: column;
     height: 1200px;
     width: 1200px; 
-    /* background-color: aqua; */
+    background-color: aqua;
 }
 
 .boxes {

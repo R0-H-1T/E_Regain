@@ -27,6 +27,11 @@ body {
     
     /* height: 100px; */
 }
+/* -----------------------------footer css ------------------------------------------ */
+.site-footer {
+    margin-top:600px;
+}
+
 .container1 {
     /* background-color: antiquewhite; */
     display: flex;
@@ -38,7 +43,8 @@ body {
     flex-direction: column;
     height: 1200px;
     width: 1200px; 
-    background-color: aqua;
+    /* background-color: aqua; */
+    background-color: red;
 }
 
 .boxes {

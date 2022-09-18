@@ -1,6 +1,6 @@
 <?php
 
-
+// international gaming olymoic sthat 
     
 
 // if($_SERVER['REQUEST_METHOD'] == "GET"){
@@ -12,21 +12,17 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
 
     switch($itemName) {
         case "fridge":
-            include '../TemplateHTML/include.html';
+            include '../TemplateHTML/boilerplate.html';
+            include '../TemplateHTML/Navbar/home.html';
             ?>
-            <div class="container1" style="
-            background-color: teal;
-            display:flex;
-            justify-content:center;">
+            <div class="container1" style=" background-color: teal; display:flex; justify-content:center;">
 
-            <div class="mainContainer" style="background-color: aliceblue; height:800px; width:1300px">
-                <div class="headerContainer">
-                    
-                </div>
+              <div class="mainContainer" style="background-color: aliceblue; height:800px; width:1300px">
+                <div class="headerContainer"> </div>
 
                 <div class="bodyContainer">
 
-                <div class="container ">
+                  <div class="container ">
                     <div class="row">
                         <div class="col-5" id="small" style="background-color: antiquewhite; height:800px;">
                             <h2 style="text-align:center"> Fridge </h2>
@@ -67,10 +63,11 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
                                 </div>
                             </form>
                         </div>
-                      </div>
+                  </div>
                 </div>
-            </div>
-            <a href="SellDonate.html">Back</a>
+              </div>
+              <a href="./SellDonate.php">Back</a>
+              <?php include '../TemplateHTML/Footer/footer.html'; ?>
             </div>
             </body>
             </html>

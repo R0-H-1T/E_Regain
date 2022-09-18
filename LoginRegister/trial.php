@@ -13,7 +13,7 @@
 
     <?php
 
-        header( "re:5;url=login.html" );
+        header( "refresh:5;url=login.html" );
 
     ?>
 

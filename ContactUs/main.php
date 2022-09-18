@@ -1,20 +1,42 @@
-<!DOCTYPE html>
+
+
+
+
+
+<?php 
+    include '../TemplateHTML/boilerplate.html';
+?>
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="main.css">
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
+    
+    <link rel="stylesheet" href="test1.css">
     <title>Contact Us</title>
-</head>
-<body>
+
+
+    <?php
+
+        include '../TemplateHTML/Navbar/home.html';
+    ?>
+
+    <div class="containerHead">
+      <div class="containerHead2">
+        <h1>Contact Us</h1>
+      </div>
+    </div>
     <div id="container">
         <div id="flex-container">
             <section class="heading">
-                <h1>Contact Us</h1>
-                <hr>
+                
+                
             </section>
             <section class="main">
                 <div class="contactForm">
@@ -117,10 +139,15 @@
               </ul>-->
         </div> 
     </div>
+                        </div>  
 
     <a href="../AboutUs/about.html">About Us</a>
 
 
+    <?php
+    
+          include '../TemplateHTML/Footer/footer.html';
+    ?>
 
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>

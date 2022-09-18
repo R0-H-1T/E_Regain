@@ -78,11 +78,11 @@ a {
     height:110px;
 }
 .containerHead2 {
-    width: 900px;
-    background-color: aquamarine;
+    width: 1200px;
+    color:white;
 }
 
 .containerHead2 h1{
-  margin-top:20px;
+  margin-top:24px;
     font-size:45px;
 }

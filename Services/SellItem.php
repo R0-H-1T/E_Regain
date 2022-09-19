@@ -15,21 +15,23 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
             include '../TemplateHTML/boilerplate.html';
             include '../TemplateHTML/Navbar/home.html';
             ?>
-            <div class="container1" style=" background-color: teal; display:flex; justify-content:center;">
+            <div class="container1" style=" background-color: teal;">
 
-              <div class="mainContainer" style="background-color: aliceblue; height:800px; width:1300px">
+              <div class="mainContainer" style="background-color: grey; display:flex; justify-content:center;">
                 <div class="headerContainer"> </div>
 
-                <div class="bodyContainer">
+                <div class="bodyContainer" style="background-color: aliceblue; height:800px; width:1300px">
 
                   <div class="container ">
                     <div class="row">
-                        <div class="col-5" id="small" style="background-color: antiquewhite; height:800px;">
+                        <div class="col-5" id="small" style="background-color: #d4d4d4; height:800px;">
                             <h2 style="text-align:center"> Fridge </h2>
-                            <img  style="width:500px; height:500px; margin-top: 20px;" src="../Images/fridgeApp.jpeg" alt="" srcset="" >
+                            <center>
+                              <img  style="width:500px; height:500px; margin-top: 20px; border-radius: 20px;" src="../Images/fridgeApp.jpeg" alt="" srcset="" >
+                            </center>
                         </div>
 
-                        <div class="col-7" id="big" style="background-color: aqua;  height:800px;">
+                        <div class="col-7" id="big" style="background-color: #ebebeb;  height:800px;">
                             <form action="">
                                 <h1 style="text-align:center">Enter the details</h1>
                                 <div class="mb-3" style="margin-top: 30px;">
@@ -67,8 +69,8 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
                 </div>
               </div>
               <a href="./SellDonate.php">Back</a>
-              <?php include '../TemplateHTML/Footer/footer.html'; ?>
             </div>
+              <?php include '../TemplateHTML/Footer/footer.html'; ?>
             </body>
             </html>
             <?php

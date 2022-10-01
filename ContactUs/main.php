@@ -18,7 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet"> -->
     
-    <link rel="stylesheet" href="test1.css">
+    <link rel="stylesheet" href="style3.css">
     <title>Contact Us</title>
 
 
@@ -29,7 +29,9 @@
 
     <div class="containerHead">
       <div class="containerHead2">
-        <h1>Contact Us</h1>
+        <center>
+          <h1><b>CONTACT US</b></h1>
+        </center>
       </div>
     </div>
     <div id="container">

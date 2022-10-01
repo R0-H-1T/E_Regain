@@ -24,7 +24,9 @@
                                 ::-webkit-scrollbar-thumb:hover {
                                   background: #555; 
                                 } /* Importing fonts from Google */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+    /* <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap" rel="stylesheet"> --> */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Roboto:wght@300&display=swap');
 
 /* Reseting */
 * {
@@ -35,12 +37,12 @@
 }
 
 body {
-    background: linear-gradient(to bottom, #000428, #004683);
+    /* background: linear-gradient(to bottom, #000428, #004683); */
     animation: background-color 20s;
     min-height: 100vh;
 }
 
-@keyframes background-color {
+/* @keyframes background-color {
     0% {
         background: linear-gradient(to bottom, #000428, #004683);
     }
@@ -57,7 +59,7 @@ body {
         background: linear-gradient(-135deg, #fae37d, #881da8, #20668f);
     }
 
-}
+} */
 
 .container {
     margin-top: 80px;
@@ -80,7 +82,7 @@ body {
 
 .card .face {
     position: absolute;
-    color: #fff;
+    color: rgb(0, 0, 0);
     width: 100%;
     height: 100%;
     overflow: hidden;
@@ -118,13 +120,10 @@ border-bottom: 1px solid #999; */
 
 .card .face.front-face .designation {
     font-size: 0.8rem;
-    color: #ddd;
+    color: rgb(19, 19, 19);
     letter-spacing: 0.8px;
 }
 
-.card:hover .face.front-face {
-    /* transform: rotateY(180deg); ---------------------------------*/
-}
 
 .card .face.back-face {
     position: absolute;
@@ -149,9 +148,7 @@ border-bottom: 1px solid #999; */
     font-size: 1.2rem;
 }
 
-.card:hover .face.back-face {
-    /* transform: rotateY(360deg); -------------------------------------*/
-}
+
 .testimonial {
     font-size:small;
     margin-left: 10px;
@@ -170,6 +167,7 @@ border-bottom: 1px solid #999; */
     }
 }</style>
                                 </head>
+                                <?php  include '../TemplateHTML/Navbar/home.html'; ?>
                                 <body className='snippet-body'>
                                 <div class="container">
         <div class="row">
@@ -183,8 +181,11 @@ border-bottom: 1px solid #999; */
                         </div>
                         <div class="designation">Magarpatta, Pune</div>
                         <div class="testimonial">
-                            Thank you for the amazing services! We are very happy with the results. 
-                            Will definitely continue with e-solutions for contributing to a better environment to lives in Pune.
+                            <center>
+
+                                Thank you for the amazing services! We are very happy with the results. 
+                                Will definitely continue with e-solutions for contributing to a better environment to lives in Pune.
+                            </center>
                         </div>
                     </div>
                     <!-- <div class="face back-face">
@@ -203,8 +204,11 @@ border-bottom: 1px solid #999; */
                         </div>
                         <div class="designation">Warje, Pune</div>
                         <div class="testimonial">
-                            Our experience working with your firm was fantastic and I would recommend it.
-                            The electronic products nearing the end of their "useful life" are being used.
+                            <center>
+
+                                Our experience working with your firm was fantastic and I would recommend it.
+                                The electronic products nearing the end of their "useful life" are being used.
+                            </center>
                         </div>
                     </div>
                     <!-- <div class="face back-face">
@@ -223,8 +227,11 @@ border-bottom: 1px solid #999; */
                         </div>
                         <div class="designation">Deccan, Pune</div>
                         <div class="testimonial">
-                            Before I was worried about the security of the confidential data stored in the hard drives.
-                            But after seeeing the work of e-solutions I was amazed and was convinced. Thanks!
+                            <center>
+
+                                Before I was worried about the security of the confidential data stored in the hard drives.
+                                But after seeeing the work of e-solutions I was amazed and was convinced. Thanks!
+                            </center>
                         </div>
                     </div>
                     <!-- <div class="face back-face">
@@ -248,8 +255,11 @@ border-bottom: 1px solid #999; */
                         </div>
                         <div class="designation">Kondhwa, Pune</div>
                         <div class="testimonial">
-                            I had been wondering what I should do with my old Laptop which had stoppped working a long time ago.
-                            Fortunately I found E-solutions!, and i'am happy about it.              
+                            <center>
+
+                                I had been wondering what I should do with my old Laptop which had stoppped working a long time ago.
+                                Fortunately I found E-solutions!, and i'am happy about it.              
+                            </center>
                         </div>
                   </div>
                   <!-- <div class="face back-face">
@@ -268,8 +278,11 @@ border-bottom: 1px solid #999; */
                       </div>
                       <div class="designation">KarveNagar, Pune</div>
                       <div class="testimonial">
-                          I love how professional the whole team of E-solutions is. They make the whole process
-                          of e-waste donation hassle-free. I feel glad to contribute and reduce e-waste.
+                        <center>
+
+                            I love how professional the whole team of E-solutions is. They make the whole process
+                            of e-waste donation hassle-free. I feel glad to contribute and reduce e-waste.
+                        </center>
                       </div>
                   </div>
                   <!-- <div class="face back-face">
@@ -288,8 +301,11 @@ border-bottom: 1px solid #999; */
                     </div>
                     <div class="designation">Pimpri Chinchwad, Pune</div>
                     <div class="testimonial">
-                        Thanks E-solutions for providing such an easy interface. I am happy that I donated my computer
-                        to E-solutions. They are very good at their work.
+                        <center>
+
+                            Thanks E-solutions for providing such an easy interface. I am happy that I donated my computer
+                            to E-solutions. They are very good at their work.
+                        </center>
                     </div>
                 </div>
                 <!-- <div class="face back-face">
@@ -303,7 +319,10 @@ border-bottom: 1px solid #999; */
     </div>
 
 
-    <a href="../AboutUs/about.html">About Us</a>
+    <a href="../AboutUs/about.php">About Us1</a>
+
+    <?php  include '../TemplateHTML/Footer/footer.html'; ?>
+
                                 <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
                                 <script type='text/javascript' src='#'></script>
                                 <script type='text/javascript' src='#'></script>

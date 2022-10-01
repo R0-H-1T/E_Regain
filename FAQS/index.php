@@ -9,6 +9,7 @@
 <body>
 <!-- partial:index.partial.html -->
 <!-- Design on Dribbble: https://dribbble.com/shots/3967265-FAQ -->
+<?php include '../TemplateHTML/Navbar/home.html'; ?>
 <h1>Frequently Asked Questions</h1>
 
 <div class="faqs-container">

@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+<head> 
   <meta charset="utf-8">
-  <title>Responsive Navbar</title>
+  <title>E-Sanchay</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style1.css">
 </head>
  <body>  
 	
@@ -17,26 +18,33 @@
 		</div>
 			
 		   <nav class="header">
-			<a class="navbar-brand" href="#" >E-regain</a>
+			<a class="navbar-brand" href="./home.html">
+				<div class="imgLogo">
+					<img src="./images/images/Try 3 Logo.png" alt="">	
+				</div>
+				<div class="headerSanch">
+					<h1 style="display: inline; ">E Sanchay</h1>
+				</div>
+			</a>
 			<!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 			  <span class="navbar-toggler-icon" ></span> -->
 			<!-- </button>-->
 			
 			 <ul> 
 			   <li><a data-red="true" href="#">Home</a></li>
-			   <li><a data-red="true" href="../AboutUs/about.html">About us</a></li>
+			   <li><a data-red="true" href="../AboutUs/about.php">About us</a></li>
 			   <li><a data-red="true" href="../Services/SellDonate.php">Services</a></li>
 			   <!-- <li><a href="#">Testimonials</a></li>
 			   <li><a href="#">FAQs</a></li> -->
-			   <li><a data-red="true" href="../ContactUs/main.html">Contact us</a></li>
-			   <li><a data-red="true" href="../LoginRegister/login.html"></a></li>
+			   <li><a data-red="true" href="../ContactUs/main.php">Contact us</a></li>
+			   <li><a data-red="true" href="../LoginRegister/login.html">Login/Sign up</a></li>
 			 </ul>
 			</nav>
 			<div class="image-wrapper">
 				<img src="./images/images/waste.jpg" class="img-fluid" alt="...">
 				<div class="punchline">
 					<figure class="text-center">
-						<blockquote class="blockquote-heading"> <p> E-REGAIN</p> </blockquote>
+						<blockquote class="blockquote-heading"> <p> E-SANCHAY</p> </blockquote>
 							<blockquote class="blockquote">
 							  <p>TRADE-IN YOUR USED <br>
 								ELECTRONICS for CASH</p>
@@ -45,7 +53,9 @@
 						<figcaption class="blockquote-footer">
 							  An innovative way to <cite title="Source Title">reuse, recyle, reduce</cite>
 						</figcaption>
-						<button class="button-19" role="button">SELL</button>
+						<a href="../Services/SellDonate.php">
+							<button class="button-19" role="button">SELL</button>
+						</a>
 					  </figure>
 					  
 				</div>

@@ -10,18 +10,18 @@ body {
     justify-content: center;
     height: 28px;
     
+    background-color: #414C4D;
 }
 .headerName {
-    margin-top: 55px;
+    
     /* height: 400px; */
-    background-color: #414C4D;
     /* position: absolute; */
-    top: 50%;
     /*transform: translateY(-50%); */
 }
 
 .headerName h1 {
     font-size: 15px;
+    color: F2F2F2;
 }
 
 .header {

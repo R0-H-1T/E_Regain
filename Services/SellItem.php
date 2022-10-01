@@ -28,40 +28,81 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
                             <h2 style="text-align:center"> Fridge </h2>
                             <center>
                               <img  style="width:500px; height:500px; margin-top: 20px; border-radius: 20px;" src="../Images/fridgeApp.jpeg" alt="" srcset="" >
+                              <div class="promiseText" style="width:450px; height: 100px; margin-top: 20px; background-color: white; border-radius: 20px; display:flex; flex-direction: row;">
+                                <img class="promiseImg" style="height:100px; width:120px;" src="../Images/promise.jpg" alt="">
+                                <p>
+                                  Accurately describe your device and we promise the quoted value and a smooth, streamlined transaction. No bull. That's a promise.
+                                </p>                             
+                              </div>
                             </center>
                         </div>
 
                         <div class="col-7" id="big" style="background-color: #ebebeb;  height:800px;">
-                            <form action="">
+                            <form action="" enctype="multipart/form-data">
                                 <h1 style="text-align:center">Enter the details</h1>
+
+
+
                                 <div class="mb-3" style="margin-top: 30px;">
-                                    <label for="formGroupExampleInput" class="form-label">What is the condition of the fridge ?</label>
+                                      <label for="formGroupExampleInput2" class="form-label" id="condition">Select the condition of the bridge:</label>
+                                      <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder"> -->
+                                      <select class="form-select" name="condition" id="door">
+                                        <option value="">New</option>
+                                        <option value="">Good</option>
+                                        <option value="">Fair</option>
+                                        <option value="">Broken</option>
+                                      </select>
+                                </div>
+
+
+                                <div class="mb-3" >
+                                    <label for="formGroupExampleInput" id="brand" class="form-label">Select the brand of your fridge:</label>
                                       <!-- <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder"> -->
-                                    <select class="form-select" name="condition" id="">
-                                        <option selected>Select condition</option>
-                                        <option value="1">Excellent</option>
-                                        <option value="2">Flawless</option>
-                                        <option value="3">food</option>
-                                        <option value="3">fair</option>
-                                        <option value="3">broken</option>
+                                    <select class="form-select" name="brand" id="">
+                                        <option selected>Select brand</option>
+                                        <option value="1">Whirpool</option>
+                                        <option value="2">LG</option>
+                                        <option value="3">Samsung</option>
+                                        <option value="3">Haier</option>
+                                        <option value="3">Godrej</option>
+                                        <option value="3">Videocon</option>
+                                        <option value="3">Kenstar</option>
+                                        <option value="3">Sansui</option>
+                                        <option value="3">Voltas</option>
+                                        <option value="3">Lloyd</option>
+                                        <option value="3">Sharp</option>
+                                        <option value="3">Other</option>
                                     </select>
                                 </div>
 
                                 <div class="mb-3">
-                                      <label for="formGroupExampleInput2" class="form-label">Question #1</label>
+                                      <label for="formGroupExampleInput2" class="form-label">Is your fridge:</label>
                                       <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder"> -->
-                                      <textarea class="form-control" placeholder="Write here" id="floatingTextarea" style="height: 50px;"></textarea>
-                                      <p><strong>Solution with span:</strong> <span class="textarea" style="display: block; background-color: white; border: 1px solid #C5C5C5;border-radius: 5px; width: 100%; overflow: hidden; resize: both; min-height: 40px; line-height: 20px;" role="textbox" contenteditable></span></p>
+                                      <select class="form-select" name="door" id="door">
+                                        <option value="">Double Door</option>
+                                        <option value="">Single Door</option>
+                                      </select>
                                 </div>
 
                                 <div class="mb-3">
-                                      <label for="formGroupExampleInput2" class="form-label">Question #2</label>
-                                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+                                      <label for="formGroupExampleInput2" class="form-label">Select the storage of your fridge:</label>
+                                      <!-- <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder"> -->
+                                      <select class="form-select" name="door" id="door">
+                                        <option value="">100 ltrs</option>
+                                        <option value="">200 - 300ltrs</option>
+                                        <option value="">300 - ltrs</option>
+                                        <option value="">400 - 500ltrs</option>
+                                        <option value="">Above 500ltrs</option>
+                                      </select>
                                 </div>
 
-                                <div class="mb-3">
-                                      <label for="formGroupExampleInput2" class="form-label">Question #3</label>
-                                      <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input placeholder">
+
+
+
+                                <div>
+                                  <center>
+                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                  </center>
                                 </div>
                             </form>
                         </div>

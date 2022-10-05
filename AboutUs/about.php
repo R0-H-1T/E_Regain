@@ -5,7 +5,7 @@
     include '../TemplateHTML/boilerplate.html';
 ?>
 
-<link rel="stylesheet" href="style2.css">
+<link rel="stylesheet" href="aboutUs.css">
 
 <title>About Us</title> 
 <style>

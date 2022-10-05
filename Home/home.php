@@ -7,13 +7,15 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style1.css">
+  <link rel="stylesheet" href="./style.css">
   <style>
 	.site-footer {
-		background-color: #26272b;
+		background-color: #26272b; 
 
 	}
-	
+	/* ul.a.active, ul.a:hover{
+    	color:#F2F2F2;
+	}	 */
   </style>
 </head>
  <body>  
@@ -25,7 +27,7 @@
 		</div>
 			
 		   <nav class="header">
-			<a class="navbar-brand" href="./home.php">
+			<a class="navbar-brand" href="./home.php" style="	">
 				<div class="imgLogo">
 					<img src="../Images/logo2.png" alt="">	
 				</div>
@@ -38,13 +40,13 @@
 			<!-- </button>-->
 			
 			 <ul> 
-			   <li><a data-red="true" href="#">Home</a></li>
-			   <li><a data-red="true" href="../AboutUs/about.php">About us</a></li>
-			   <li><a data-red="true" href="../Services/SellDonate.php">Services</a></li>
+			   <li><a class="menu" data-red="true" href="#">Home</a></li>
+			   <li><a class="menu" data-red="true" href="../AboutUs/about.php">About us</a></li>
+			   <li><a class="menu" data-red="true" href="../Services/SellDonate.php">Services</a></li>
 			   <!-- <li><a href="#">Testimonials</a></li>
 			   <li><a href="#">FAQs</a></li> -->
-			   <li><a data-red="true" href="../ContactUs/main.php">Contact us</a></li>
-			   <li><a data-red="true" href="../LoginRegister/login.php">Login/Sign up</a></li>
+			   <li><a class="menu" data-red="true" href="../ContactUs/main.php">Contact us</a></li>
+			   <li><a class="menu" data-red="true" href="../LoginRegister/login.php">Login/Sign up</a></li>
 			 </ul>
 			</nav>
 			<div class="image-wrapper">

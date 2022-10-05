@@ -1,7 +1,7 @@
 <style>
   #nav {
-    background: #0082e6;
-    height: 80px;
+    background: #182628;
+    height: 100px;
     width: 100%;
   }
 
@@ -9,7 +9,7 @@
     color: white;
     font-size: 35px;
     line-height: 80px;
-    padding: 0 100px;
+    padding: 0 5px;
     font-weight: bold;
   } 
 
@@ -35,11 +35,14 @@
   }
 
   a.active,
-  #nav a:hover {
-    background: #1b9bff;
+  #nav ul a:hover {
+    background: #378b50;
     transition: .5s;
   }
 
+  #nav label {
+    cursor: pointer;
+  }
 
 
 
@@ -201,12 +204,16 @@
 
 
   <div id="nav">
-    <label class="logo">E-regain</label>
+    
+    <a href="../Home/home.php" style="text-decoration: none;">
+      <img src="../Images/logo2.png" alt="" style="width:50px; height:50px; margin-left:40px; margin-bottom: 15px;">      
+      <label class="logo">E-Sanchay</label>
+    </a>
     <ul>
-      <li><a href="../Home/home.html">Home</a></li>
+      <li><a href="../Home/home.php">Home</a></li>
       <li><a href="../AboutUs/about.php">About us</a></li>
       <li><a href="../Services/SellDonate.php">Services</a></li>
-      <li><a href="../LoginRegister/login.html">Login</a></li>
+      <li><a href="../LoginRegister/login.php">Login/SignUp</a></li>
     </ul>
   </div>
 

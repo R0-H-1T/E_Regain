@@ -26,7 +26,10 @@
 			<a href="https://www.facebook.com/E_regain-100474962806088/?ref=pages_you_manage" class="fa fa-facebook"></a>
 		</div>
 			
-		   <nav class="header">
+		<?php
+			include '../TemplateHTML/Navbar/home.html';
+		?>
+		   <!-- <nav class="header">
 			<a class="navbar-brand" href="./home.php" style="	">
 				<div class="imgLogo">
 					<img src="../Images/logo2.png" alt="">	
@@ -39,16 +42,16 @@
 			  <span class="navbar-toggler-icon" ></span> -->
 			<!-- </button>-->
 			
-			 <ul> 
+			<!-- <ul> 
 			   <li><a class="menu" data-red="true" href="#">Home</a></li>
 			   <li><a class="menu" data-red="true" href="../AboutUs/about.php">About us</a></li>
 			   <li><a class="menu" data-red="true" href="../Services/SellDonate.php">Services</a></li>
 			   <!-- <li><a href="#">Testimonials</a></li>
 			   <li><a href="#">FAQs</a></li> -->
-			   <li><a class="menu" data-red="true" href="../ContactUs/main.php">Contact us</a></li>
+			   <!--<li><a class="menu" data-red="true" href="../ContactUs/main.php">Contact us</a></li>
 			   <li><a class="menu" data-red="true" href="../LoginRegister/login.php">Login/Sign up</a></li>
 			 </ul>
-			</nav>
+			</nav> -->
 			<div class="image-wrapper">
 				<img src="../Images/old-electronics.jpg" class="img-fluid" alt="...">
 				<div class="punchline">

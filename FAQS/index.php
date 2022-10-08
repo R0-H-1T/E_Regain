@@ -9,7 +9,10 @@
 <body>
 <!-- partial:index.partial.html -->
 <!-- Design on Dribbble: https://dribbble.com/shots/3967265-FAQ -->
-<?php include '../TemplateHTML/Navbar/home.html'; ?>
+<?php 
+    session_start();
+	include '../TemplateHTML/Navbar/home.php'; 
+?>
 <h1>Frequently Asked Questions</h1>
 
 <div class="faqs-container">
@@ -100,6 +103,7 @@
 </div>
 
 <a href="../AboutUs/about.html">About Us</a>
+<?php include '../TemplateHTML/Footer/footer.html'; ?>
 <!-- SOCIAL PANEL HTML -->
 <!-- <div class="social-panel-container">
 	<div class="social-panel">

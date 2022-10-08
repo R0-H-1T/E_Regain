@@ -2,6 +2,7 @@
 
 
 <?php 
+    session_start();
     include '../TemplateHTML/boilerplate.html';
 ?>
 
@@ -23,7 +24,7 @@
 </style>
 
 <?php
-    include '../TemplateHTML/Navbar/home.html';
+    include '../TemplateHTML/Navbar/home.php';
 ?>
 
 <!-- <!doctype html>

@@ -24,7 +24,10 @@
         }
     </style>
     <!-- include navbar -->
-    <?php   include '../TemplateHTML/Navbar/home.html'; ?>
+    <?php   
+        session_start();
+        include '../TemplateHTML/Navbar/home.php'; 
+    ?>
 
     <div class="container0">
         <div class="headerName">
@@ -219,7 +222,6 @@
 
 
 
-    <a href="../AboutUs/about.html">About Us</a>
 
 
 

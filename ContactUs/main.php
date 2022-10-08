@@ -4,6 +4,8 @@
 
 
 <?php 
+    session_start();
+
     include '../TemplateHTML/boilerplate.html';
 ?>
 
@@ -24,7 +26,7 @@
 
     <?php
 
-        include '../TemplateHTML/Navbar/home.html';
+        include '../TemplateHTML/Navbar/home.php';
     ?>
 
     <div class="containerHead">
@@ -42,23 +44,23 @@
             </section>
             <section class="main">
                 <div class="contactForm">
-                    <form class="row g-3">
+                    <form class="row g-3" action="msg.php" method="POST">
                         <div class="col-12">
                             <label for="inputName" class="form-label">Name:</label>
-                            <input type="text" class="form-control" id="inputName" placeholder="Your name">
+                            <input type="text" class="form-control" name="uName" id="inputName" placeholder="Your name">
                           </div>
                         <div class="col-12">
                           <label for="inputEmail4" class="form-label">Email:</label>
-                          <input type="email" class="form-control" id="inputEmail4" placeholder="Your email">
+                          <input type="email" class="form-control" name="uEmail" id="inputEmail4" placeholder="Your email">
                         </div>
                         
                         <div class="col-12">
                           <label for="inputPhno" class="form-label">Phone No.:</label>
-                          <input type="text" class="form-control" id="inputPhno" placeholder="Your phone number">
+                          <input type="text" class="form-control" name="uPhone" id="inputPhno" placeholder="Your phone number">
                         </div>
                         <div class="col-12">
                           <label for="inputMsg" class="form-label">Message</label>
-                          <textarea class="form-control" id="inputMsg" rows="3" placeholder="Your message"></textarea>
+                          <textarea class="form-control" name="uMessage" id="inputMsg" rows="3" placeholder="Your message"></textarea>
                         </div>
                         
                         <div class="col-12">
@@ -115,7 +117,7 @@
                         <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                       </svg>
 
-                      <div class="mail"><a href="https://www.bmcc.ac.in/web/?page_id=466">office.bmcc@despune.org</a></div>
+                      <div class="mail"><a href="#">esanchay@gmail.com</a></div>
                     </center>
             </div>
 

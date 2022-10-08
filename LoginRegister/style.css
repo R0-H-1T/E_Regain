@@ -10,8 +10,8 @@
 
 
 .log {
-    width: 500px;
-    background-color: #182628;
+    width: 600px;
+    background-color:rgb(168, 255, 169);
 
     /* background-color:aquamarine; */
     border: 1px solid rgb(119, 198, 2);
@@ -30,8 +30,8 @@
     text-align: center;
     padding-left: 25px;
     padding-right: 25px;
-    color: #f2f2f2;
-    background-color: #414c4d ;
+    color:rgb(43, 43, 43);
+    background-color:rgb(168, 255, 169);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 

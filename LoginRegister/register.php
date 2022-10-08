@@ -145,10 +145,10 @@
 
             var check = function() {
                 if (document.getElementById('password').value == document.getElementById('conf_password').value) {
-                    if(document.getElementById('password').value.length <= 6){
-                        document.getElementById('message').innerHTML = 'Password must be greater than 6 characters';
+                    // if(document.getElementById('password').value.length <= 6){
+                    //     document.getElementById('message').innerHTML = 'Password must be greater than 6 characters';
                         
-                    }
+                    // }
                   document.getElementById('message').style.color = 'green'; 
                   document.getElementById('message').innerHTML = ' ';
                   document.getElementById('submit').disabled = false;

@@ -1,6 +1,9 @@
 <!doctype html>
                         <html>
                             <head>
+                                <?php
+                                    session_start();
+                                ?>
                                 <meta charset='utf-8'>
                                 <meta name='viewport' content='width=device-width, initial-scale=1'>
                                 <title>Snippet - BBBootstrap</title>
@@ -322,7 +325,7 @@ border-bottom: 1px solid #999; */
     <a href="../AboutUs/about.php">About Us1</a>
 
     <?php  
-        session_start();
+        
         include '../TemplateHTML/Footer/footer.html'; 
     ?>
 

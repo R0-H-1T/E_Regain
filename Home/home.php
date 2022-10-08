@@ -55,8 +55,8 @@
 			</nav> -->
 
 		<?php
-		
-        if(isset($_SESSION['logged'])){  ?>
+        if(isset($_SESSION['logged'])){  
+			if($_SESSION['flashedMessage'] == 'false') {  ?>
             <div class="alert alert-success alert-dismissible fade show" role="alert">  
               <center>
 				  <strong>Welcome back <?php echo $_SESSION['UName'];?></strong>
@@ -64,7 +64,11 @@
               <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
             </div>
 
-    	<?php } ?>
+    	<?php } 
+		
+		}
+		$_SESSION['flashedMessage'] = 'true';
+		?>
 	
 			<div class="image-wrapper">
 				<img src="../Images/old-electronics.jpg" class="img-fluid" alt="...">

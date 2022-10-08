@@ -167,7 +167,7 @@ border-bottom: 1px solid #999; */
     }
 }</style>
                                 </head>
-                                <?php  include '../TemplateHTML/Navbar/home.html'; ?>
+                                <?php  include '../TemplateHTML/Navbar/home.php'; ?>
                                 <body className='snippet-body'>
                                 <div class="container">
         <div class="row">
@@ -321,7 +321,10 @@ border-bottom: 1px solid #999; */
 
     <a href="../AboutUs/about.php">About Us1</a>
 
-    <?php  include '../TemplateHTML/Footer/footer.html'; ?>
+    <?php  
+        session_start();
+        include '../TemplateHTML/Footer/footer.html'; 
+    ?>
 
                                 <script type='text/javascript' src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js'></script>
                                 <script type='text/javascript' src='#'></script>

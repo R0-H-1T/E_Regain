@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="style.css">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet" />
     <!-- Google Fonts -->
@@ -17,25 +17,31 @@
 </head>
 
 <body>
+
+    <?php  
+        session_start();
+        include '../TemplateHTML/Navbar/home.php'; 
+    ?>
+
     <div class="loginForm">
         <section class="log">
             <h1 class="loginHeader">Login</h1>
             <hr>
             <div class="login">
 
-                <form action="trial.php" method="GET">
+                <form action="trial.php" method="POST">
 
 
                     <!-- Email input -->
-                    <div class="form-outline mb-4">
-                        <input type="email" name="email" id="form2Example1" class="form-control"  autocomplete="off"/>
+                    <div class="form-outline mb-4"> 
+                        <input type="email" name="uEmail" id="form2Example1" class="form-control" required"/>
                         <label class="form-label" for="form2Example1">Email address</label>
                     </div>
 
                     <!-- Password input -->
                     <div class="form-outline mb-4">
-                        <input type="password" name="pass" id="form2Example2" class="form-control" autocomplete="off"/>
-                        <label class="form-label" for="form2Example2">Password</label>
+                        <input type="password" name="uPass" id="form2Example2" class="form-control"required"/>
+                        <label  class="form-label" for="form2Example2">Password</label>
                     </div>
 
                     <!-- 2 column grid layout for inline styling -->
@@ -54,12 +60,15 @@
                         </div>
                     </div>
 
+                    <!-- hiddenInputForLogin/RegisterIdentification -->
+                    <input type="hidden" name="LoginRegister" value="login">
+
                     <!-- Submit button -->
                     <button type="submit" value="submit" class="btn btn-primary btn-block mb-4">Sign in</button>
                     
                     <!-- Register buttons -->
                     <div class="text-center">
-                        <p>Not a member? <a href="./register.html">Register</a></p>
+                        <p>Not a member? <a href="./register.php">Register</a></p>
                         <!-- <p>or sign up with:</p> -->
                         <!-- <button type="button" class="btn btn-link btn-floating mx-1">
                             <a href="https://github.com/R0-H-1T"><div class="fab fa-facebook-f"></div></a>
@@ -86,7 +95,8 @@
     </div>
 
 
-    <a href="../AboutUs/about.html">About Us</a>
+    <a href="../AboutUs/about.php">About Us</a>
+    <?php  include '../TemplateHTML/Footer/footer.html'; ?>
 
     <!-- MDB -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.js"></script>

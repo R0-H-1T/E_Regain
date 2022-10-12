@@ -14,7 +14,7 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
     $umessage = strip_tags($umessage);
 
     
-    include '../DBConn/dbconn.php';
+    include '../DBConn/dbconn.php'; 
 
 
     $sql = "INSERT INTO contactus(UName, UEmail, UPhone, UMessage) values('$uname', '$uemail', '$uphone', '$umessage')";

@@ -24,6 +24,7 @@
                 session_start();
                 $_SESSION["UserID"] = $row["UserID"];
 		        $_SESSION["UName"] = $row["UserName"];
+		        $_SESSION["UEmail"] = $row["Email"];
 		        $_SESSION["logged"] = "TRUE";
         		$_SESSION["flashedMessage"] = 'false';
 

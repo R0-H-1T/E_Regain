@@ -7,7 +7,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
     switch($itemName) {
         case "fridge":
             include '../TemplateHTML/boilerplate.html';
-      
+            
 
             include '../TemplateHTML/Navbar/home.php';
             ?>
@@ -56,8 +56,8 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
                                     <label for="formGroupExampleInput" id="brand" class="form-label">Select the brand of your fridge:</label>
                                       <!-- <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input placeholder"> -->
                                     <select class="form-select" name="brand" id="brand">
-                                        <option selected>Select brand</option>
-                                        <option value="Whirpool">Whirpool</option>
+                                        <!-- <option>Select brand</option> -->
+                                        <option selected value="Whirpool">Whirpool</option>
                                         <option value="LG">LG</option>
                                         <option value="Samsung">Samsung</option>
                                         <option value="Haier">Haier</option>
@@ -97,13 +97,13 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
                                 <div class="mb-3">
                                   <div class="form-group">
                                     <label for="fileInput">Upload a picture of your fridge: </label>
-                                    <input class="form-control" id="fileInput" type="file" name="uploadfile" value="" />
+                                    <input class="form-control" id="fileInput" type="file" name="uploadfile" value="" required />
                                   </div>
                                 </div>
 
                                 <div>
                                   <center>
-                                    <button type="submit" class="btn btn-primary">Submit</button>
+                                    <button type="submit" class="btn btn-primary">Next</button>
                                   </center>
                                 </div>
 
@@ -193,7 +193,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
                                 <div class="mb-3">
                                   <div class="form-group">
                                     <label for="fileInput">Upload a picture of your ac: </label>
-                                    <input class="form-control" id="fileInput" type="file" name="uploadfile" value="" />
+                                    <input class="form-control" id="fileInput" type="file" name="uploadfile" value="" required />
                                   </div>
                                 </div>
             <?php

@@ -225,6 +225,7 @@
           } else {
               if(isset($_SESSION['logged'])){  ?>
                   <li><a data-red="true" href="../TemplateHTMl/logout.php">Logout</a></li>
+                  <li><a data-red="true" href="../UserDashboard/user.php">Your Dashboard</a></li>
                   <!-- <li style="color:white; text-transform:uppercase;"><?php echo 'Hello '.$_SESSION['UName'];?></li> -->
             
               <?php

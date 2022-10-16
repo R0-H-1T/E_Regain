@@ -17,7 +17,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
         <?php
         
-        $sql = "SELECT UserName, Email, UserAddress, PhoneNumber, productID ,productCategory, productDate, productAns, productType, adminResponse, productImgPath, productCategory, productPrice FROM users, products where user_ID = userID";
+        $sql = "SELECT UserName, Email, UserAddress, PhoneNumber, productID ,productCategory, productDate, productAns, productType, adminResponse, productImgPath, userResponse,productCategory, productPrice FROM users, products where user_ID = userID";
 
 
         $result = mysqli_query($conn, $sql);
@@ -80,8 +80,12 @@
                                     <p class="card-text"><b>You have: <?php echo $row["adminResponse"]; ?></b></p>
                                     
                                    <?php } ?>
+
                                 <!-- ------------------------------------------------------------------------------------------ -->
-                                <?php if($row["productType"] == "sell"){
+                                <?php if($row["userResponse"] == '') {
+                                        
+                                   ?>
+                                    <?php if($row["productType"] == "sell"){
 
                                             if($row["adminResponse"] == "Approved"){ ?>
                                                 <p class="card-text"><b>Up for SELLING</b></p>
@@ -104,9 +108,16 @@
                                                                 <p class="card-text"><b>Up for SELLING</b></p>                                                
                                                         <?php } ?>                                                    
                                             <?php }
-                                } else { ?>
-                                    <p class="card-text"><b>Up for DONATING</b></p>                                                
-                                <?php }?>
+                                    } else { 
+                                            if($row["adminResponse"] == "Approved"){ ?>
+                                                    <p class="card-text" style="background-color: green; border-radius: 10px; color:#f2f2f2"><b>The user has donated this product<h2>&#128515;</h2> </b></p>                                                
+                                        <?php } 
+                                    }
+                            }else if($row["userResponse"] == '1') { ?>
+                                    <p class="card-text" style="background-color: green; border-radius: 10px; color:#f2f2f2"><b>The user sold this product to us <h2>&#128515;</h2></b></p>                                                
+                            <?php } else { ?>
+                                    <p class="card-text" style="background-color: red; border-radius: 10px; color:#f2f2f2"><b>The user is not selling this product to us <h2> &#128577;</h2> </b></p>                                                
+                            <?php } ?>
                                 
 
 

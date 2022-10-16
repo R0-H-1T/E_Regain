@@ -14,7 +14,7 @@
         $sql = "UPDATE products SET adminResponse = '$res' where productID = $productID";
         $result = mysqli_query($conn, $sql);
         
-        //for accepting price 
+        //for accepting price  
         if(isset($_REQUEST["submit"])){
             $productPrice = $_REQUEST["productPrice"];
             $sql = "UPDATE products set productPrice = '$productPrice' where productID = $productID";

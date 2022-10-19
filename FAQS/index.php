@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>FAQ</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!-- Design on Dribbble: https://dribbble.com/shots/3967265-FAQ -->
+<?php 
+    session_start();
+	include '../TemplateHTML/Navbar/home.php'; 
+?>
+<h1>Frequently Asked Questions</h1>
+
+<div class="faqs-container">
+	<div class="faq active">
+		<h3 class="faq-title">
+			What is e-waste?
+		</h3>
+		<p class="faq-text">
+			E-waste refers to electronic products nearing the end of their "useful life", for example, computers, televisions, VCRs, stereos, copiers, and fax machines. Many of these products can be reused, refurbished, or recycled.<br>Anything that plugs into a powerpoint, uses a charger or is powered by a battery!
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			What if I need to get information off an item I donated?
+		</h3>
+		<p class="faq-text">
+			For any hardware, please ensure you have removed all data from the device if you require a copy (otherwise it will be disposed of securely). By leaving any item at eWaste Connection you relinquish your rights to and ownership of that item and it is likely to be in many pieces very soon after donation! Our donation policy can be accessed <b>Hyperlink of t&c webpage</b>.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			How can i donate electrical items?
+		</h3>
+		<p class="faq-text">
+			You can drop items off at either of our locations at any time. It is important you read our donation policy though. For large volumes of e-waste, we may be able to collect directly from you. Give us a call to enquire.
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+	
+	<div class="faq">
+		<h3 class="faq-title">
+			Why should you recycle e-Waste?
+		</h3>
+		<p class="faq-text">
+			E-waste which is a major source of toxic elements like Lead, Mercury, Cadmium, etc can prove to be quite dangerous if not disposed responsibly. Hence it is necessary that e-waste is not only handled safely, but is also handled by trained professionals else it could also prove to be fatal.
+			
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+
+	<div class="faq">
+		<h3 class="faq-title">
+			 What do we recyle?
+		</h3>
+		<p class="faq-text">
+			Electronic waste (e-waste) typically includes discarded computer monitors, motherboards, mobile phones and chargers, compact discs, headphones, television sets, air conditioners and refrigerators.<br>
+		    
+			<br>Home Appliances -AC ,FRIDGE ,GEYSER<br>
+			<br> Communication and IT devices- LAPTOP,TAB ,MOBILE, DESKTOP,PRINTER </br>
+			<br>Home Entertainment - XBOX,RADIO,HEADPHONES ,CHARGER, CD/DVDS ,HARD DISKS.<br>
+			
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+
+	<div class="faq">
+		<h3 class="faq-title">
+			What do we do with e-waste?
+		</h3>
+		<p class="faq-text">
+			Reduce, reuse, and recycle. Reduce your generation of e-waste through smart procurement and good maintenance. Reuse still-functioning electronic equipment by donating or selling it to someone. Recycle those components that cannot be repaired. Most electronic devices contain a variety of materials, including metals, that can be recycled.			
+		</p>
+		<button class="faq-toggle">
+			<i class="fas fa-chevron-down"></i>
+			<i class="fas fa-times"></i>
+		</button>
+	</div>
+
+</div>
+
+<a href="../AboutUs/about.html">About Us</a>
+<?php include '../TemplateHTML/Footer/footer.html'; ?>
+<!-- SOCIAL PANEL HTML -->
+<!-- <div class="social-panel-container">
+	<div class="social-panel">
+		<p>Created with <i class="fa fa-heart"></i> by
+			<a target="_blank" href="https://florin-pop.com">Florin Pop</a></p>
+		<button class="close-btn"><i class="fas fa-times"></i></button>
+		<h4>Get in touch on</h4>
+		<ul>
+			<li>
+				<a href="https://www.patreon.com/florinpop17" target="_blank">
+					<i class="fab fa-discord"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://twitter.com/florinpop1705" target="_blank">
+					<i class="fab fa-twitter"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://linkedin.com/in/florinpop17" target="_blank">
+					<i class="fab fa-linkedin"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://facebook.com/florinpop17" target="_blank">
+					<i class="fab fa-facebook"></i>
+				</a>
+			</li>
+			<li>
+				<a href="https://instagram.com/florinpop17" target="_blank">
+					<i class="fab fa-instagram"></i>
+				</a>
+			</li>
+		</ul>
+	</div>
+</div>
+<button class="floating-btn">
+	Get in Touch
+</button>
+
+<div class="floating-text">
+	Part of <a href="https://florin-pop.com/blog/2019/09/100-days-100-projects" target="_blank">#100Days100Projects</a>
+</div> -->
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>

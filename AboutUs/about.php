@@ -2,10 +2,11 @@
 
 
 <?php 
+    session_start();
     include '../TemplateHTML/boilerplate.html';
 ?>
 
-<link rel="stylesheet" href="style1.css">
+<link rel="stylesheet" href="aboutUs.css">
 
 <title>About Us</title> 
 <style>
@@ -23,7 +24,7 @@
 </style>
 
 <?php
-    include '../TemplateHTML/Navbar/home.html';
+    include '../TemplateHTML/Navbar/home.php';
 ?>
 
 <!-- <!doctype html>
@@ -42,16 +43,21 @@
   </head>
   <body> -->
     <div class="aboutus-header">
-        <h2 style="color: white;">About Us</h2>
+      <center>
+        <h2 style="color: white;"><b>About Us</b></h2>
+      </center>
     </div>
     <div class="text-wrapper">
         <div class="top-content">
             <img src="./imgABT/img/about.png" class="img-fluid" alt="">
             <div class="top-info">
               <center>
-                <h5>Innovative Way To reuse, recyle, reduce</h5><br><br>
+                <b>
+                  <h5>Innovative Way To reuse, recyle, reduce</h5>
+                </b>
+                <br><br>
+                <p>E-Sanchay was established in 2022 and is headquartered in Pune, Maharashtra. Our company is a leading player in providing efficient, ethical and environmentally friendly services. It helps a typical person like u and me to manage outdated technology or even technology that doesn't function anymore in all shapes and sizes. And sell to vendors that recycle assets in a safe, secure and responsible manner.</p>
               </center>
-                <p>E-Regain was established in 2022 and is headquartered in Pune, Maharashtra. Our company is a leading player in providing efficient, ethical and environmentally friendly services. It helps a typical person like u and me to manage outdated technology or even technology that doesn't function anymore in all shapes and sizes. And sell to vendors that recycle assets in a safe, secure and responsible manner.</p>
             </div>
 
         </div>
@@ -60,9 +66,12 @@
           
             <div class="bottom-info">
               <center>
-                <h5>Do your part. Recycling is a shared responsibility!</h5><br><br>
-              </center>
+                <b>
+                  <h5>Do your part. Recycling is a shared responsibility!</h5>
+                </b>
+                <br><br>  
                 <p>Our qualified staff handles the logistics, project management and all other aspects of your end-of-life technology retirement. U as a customer receives a decent amount based on what u sell us. We make sure public get the right amount for their appliances whatever the condition maybe. There's an option to donate your e-product as an act of generosity and contribute in welfare of mother earth. We then sell the technologies again to the vendors who are trusted and have great records in the book of history. Then your e-appliances are recycled by these vendors.</p>
+              </center>
             </div>
 
         </div>
@@ -87,7 +96,7 @@
                     <!-- our mission  -->
                     <div class="carousel-item">
     
-                            <h5 class="m-0">Our Vission</h5>
+                            <h5 class="m-0">Our Vision</h5>
                             <br><br><br>
                             <h4 class="font-weight-normal mb-4">The vision of 'E solutions' is to maintain its role as responsible citizen in creating a sustainable future through innovation, efficiency, safety, and service excellence.</h4>
                     </div>

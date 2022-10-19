@@ -14,7 +14,7 @@
     <link rel="stylesheet" type="text/css"  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.4.0/mdb.min.css" rel="stylesheet" />
 
-    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="stylesheet" href="style1.css" type="text/css"/>
 
     <title>Sell/Donate</title>
 
@@ -24,11 +24,14 @@
         }
     </style>
     <!-- include navbar -->
-    <?php   include '../TemplateHTML/Navbar/home.html';        ?>
+    <?php   
+        session_start();
+        include '../TemplateHTML/Navbar/home.php'; 
+    ?>
 
     <div class="container0">
         <div class="headerName">
-            <h1 class="donateSell" style="color: black;">Donate/Sell</h1>
+            <h1 class="donateSell" style="color: #F2F2F2; margin-top:5px;">DONATE / SELL</h1>
         </div>
     </div>
 
@@ -219,7 +222,6 @@
 
 
 
-    <a href="../AboutUs/about.html">About Us</a>
 
 
 

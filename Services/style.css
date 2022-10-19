@@ -8,22 +8,25 @@ body {
 .container0 {
     display: flex;
     justify-content: center;
-    height: 200px;
-    background-color:rgb(119, 198, 2);
+    height: 28px;
     
 }
 .headerName {
-    margin-top: 65px;
+    margin-top: 55px;
     /* height: 400px; */
-    background-color: rgb(119, 198, 2);
+    background-color: #414C4D;
     /* position: absolute; */
     top: 50%;
     /*transform: translateY(-50%); */
 }
 
+.headerName h1 {
+    font-size: 15px;
+}
+
 .header {
-    background-color:  rgb(119, 198, 2);
-    color: black;
+    background-color: #414C4D ;
+    color: #F2F2f2;
     
     /* height: 100px; */
 }

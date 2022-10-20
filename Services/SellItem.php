@@ -97,7 +97,7 @@ if($_SERVER['REQUEST_METHOD'] == "GET"){
                                 <div class="mb-3">
                                   <div class="form-group">
                                     <label for="fileInput">Upload a picture of your fridge: </label>
-                                    <input class="form-control" id="fileInput" type="file" name="uploadfile" value="" required />
+                                    <input class="form-control" id="fileInput" type="file" name="uploadfile[]" value="" multiple required  />
                                   </div>
                                 </div>
 

@@ -18,7 +18,7 @@
                 $pdf=new FPDF();
                 $pdf->AddPage();
                 $pdf->SetFont('Arial','B',16);
-                $pdf->Cell(40,10, 'Need to think of the content');
+                $pdf->Cell(40,10, 'Hello '.$row["userName"]); 
                 $pdf->Output();
             }else {
                 echo "greater than one; REALLY";

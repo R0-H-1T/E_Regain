@@ -54,7 +54,7 @@
             VALUE('{$_SESSION["UserID"]}', 1, NOW(), '$arr', '$fileupload', '$productType', '$productCategory')";
 
 
-  
+    echo $fileupload;
     //for user table
     if (mysqli_query($conn, $user)) {
          //for products table 

@@ -18,12 +18,26 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $storage = $_REQUEST['storage'];
             $door = $_REQUEST['door'];
 
-
             include './QuesTemplate/functions.php';
 
-            $filename = $_FILES["uploadfile"]["name"];
 
-            uploadImage('Fridge'); ?>
+            //upload file 
+            $total = count($_FILES['uploadfile']['name']);
+            if($total > 3){
+                die("<center><h1 style='background-color:red; color:white'>You can upload only 3 images</h1>/center>");
+            }
+            $imgPaths = "";
+            foreach($_FILES['uploadfile']['name'] as $key=>$value){
+                $imgPaths .= uploadimage('Fridge', $key);
+                $filename = $_FILES['uploadfile']['name'][$key];
+            }
+            echo $imgPaths;
+            $imgarr = removehash($imgPaths);
+            $count = 0;
+            // $filename = $_FILES["uploadfile"]["name"];
+            // uploadImage('Fridge'); 
+            
+            ?>
 
 
 
@@ -37,19 +51,27 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <div class="main_container" style="display:flex;">
                 <div class="container text-center" style="width:80%;">
                     <div class="row">
-                        <div class="col-5" style="background-color:">
+                        <div class="col-5" style="background-color:darkgrey;">
                         <!-- carousel -->
                         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel" style="margin-top:20px; margin-bottom:20px;">
                             <div class="carousel-inner">
-                                <div class="carousel-item active">
-                                    <img style="border-radius: 20px; height: 550px;" src="./ProductImage/Fridge/<?php echo $filename; ?>" class="d-block w-100" alt="..." style="height: 600px;">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="..." class="d-block w-100" alt="...">
-                                </div>
-                                <div class="carousel-item">
-                                  <img src="..." class="d-block w-100" alt="...">
-                                </div>
+                                
+                            <?php   
+    
+                                    foreach($imgarr as $path){
+                                        if($count == 0){ ?>
+                                            <div class="carousel-item active">
+                                                <img style="border-radius: 20px; height: 600px;" src="./<?php echo $path; ?>" class="d-block w-100" alt="...">
+                                            </div>
+                                        <?php }else { ?>
+                                            <div class="carousel-item">
+                                                <img style="border-radius: 20px; height: 600px;" src="./<?php echo $path; ?>" class="d-block w-100" alt="...">
+                                            </div>
+                                        <?php }
+                                            $count++;
+                                    }
+
+                                ?>
                               </div>
                               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -81,9 +103,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
                                                     <input type="hidden" name="arr" value='<?php echo "$brandName#$condition#$storage#$door#"?>'>
                                                    
-                                                    <input type="hidden" name="fileupload" value="./ProductImage/Fridge/<?php echo $filename; ?>">
+                                                    <input type="hidden" name="fileupload" value='<?php echo "$imgPaths" ;?>'>
 
-                                                    <input type="hidden" name="productCategory" value="fridge">
+                                                    <input type="hidden" name="productCategory" value="fridge" >
 
 
                                                     <!-- <button type="submit" class="btn btn-primary">Go ahead?</button> -->
@@ -136,8 +158,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 
 
-            <?php include '../TemplateHTML/Footer/footer.html';
-            break;
+            <?php 
+                include '../TemplateHTML/Footer/footer.html'; 
+                cdnPoppinsAndJS();
+            ?>
+            </body>
+        </html>
+            <?php break;
         
         case "aircon":
             echo "<h1>$itemName</h1>";

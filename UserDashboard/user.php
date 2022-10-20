@@ -27,15 +27,50 @@
             while($row = mysqli_fetch_assoc($result)) { 
                 
                 $arr = removeHash($row["productAns"]);
+                $imgarr = removeHash($row["productImgPath"]);
                 
-                
+                $count = 0;
                 ?>
                 
                 <!-- echo "id: " . $row["id"]. " - Name: " . $row["firstname"]. " " . $row["lastname"]. "<br>"; -->
                 <div class="col">
                 <div class="card" style="width:400px; margin-bottom: 30px;">
                     <center>
-                        <img style="width:300px; height:300px; "src="../Services/<?php echo $row["productImgPath"];  ?>" class="card-img-top" alt="...">
+                        <!-- <img style="width:300px; height:300px; "src="../Services/<?php //echo $row["productImgPath"];  ?>" class="card-img-top" alt="..."> -->
+
+
+                      <!-- img carousel -->
+                      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+
+                          <?php   
+
+                          foreach($imgarr as $path){
+                              if($count == 0){ ?>
+                                  <div class="carousel-item active">
+                                      <img style="width:300px; height:300px;" src="../Services/<?php echo $path; ?>" class="d-block w-100" alt="...">
+                                  </div>
+                              <?php }else { ?>
+                                  <div class="carousel-item">
+                                      <img style="width:300px; height:300px;" src="../Services/<?php echo $path; ?>" class="d-block w-100" alt="...">
+                                  </div>
+                              <?php }
+                                  $count++;
+                          }
+
+                          ?>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Next</span>
+                        </button>
+                      </div>
+
                     </center>
                   <div class="card-body">
                     <h4>Details of your product:  </h4>
@@ -57,7 +92,7 @@
                           <?php if($row["adminResponse"] == "Rejected") { ?>
                             <p class="card-text" style="background-color:#f0f0f0; border-radius: 10px;">Unfortunately, this product does not hold any <b> monetery value.</b> However you can put this up for <b>donation</b></p>
                           <?php } else { ?>
-                            <p class="card-text"><b>Someone will come for inspection of your product<b></p>
+                            <p class="card-text"><b>Someone will come for inspection of your product</b></p>
                           <?php } ?>
                       <?php }else if($row["adminResponse"] == "Approved"){?>
                         
@@ -146,4 +181,8 @@
 
     include '../TemplateHTML/Footer/footer.html';
 
+    cdnPoppinsAndJS();
 ?>
+
+</body>
+    </html>

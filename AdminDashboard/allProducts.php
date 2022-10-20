@@ -17,7 +17,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
         <?php
         
-        $sql = "SELECT UserName, Email, UserAddress, PhoneNumber, productID ,productCategory, productDate, productAns, productType, adminResponse, productImgPath, userResponse,productCategory, productPrice FROM users, products where user_ID = userID";
+        $sql = "SELECT UserName, Email, UserAddress, PhoneNumber, productID ,productCategory, productDate, productAns, productType, adminResponse, productImgPath, userResponse,productCategory, productPrice FROM users, products where user_ID = userID ORDER BY productDate desc";
 
 
         $result = mysqli_query($conn, $sql);

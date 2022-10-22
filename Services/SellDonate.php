@@ -20,7 +20,7 @@
 
     <style>
         .site-footer {
-            margin-top: 600px;
+            margin-top: 350px;
         }
     </style>
     <!-- include navbar -->
@@ -35,7 +35,7 @@
         </div>
     </div>
 
-    <div class="container1">
+    <div class="container1"> 
         <div class="headerBoxes">
 
             <!-- <section class="header">
@@ -80,7 +80,7 @@
                         <div class="col" id="colmid">
                             <a href="SellItem.php?itemName=aircon">
                                 <figure class="figure">
-                                    <img src="../Images/airCon.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/ProdImages/ac.jpg" class="figure-img img-fluid rounded" alt="...">
                                 </figure>
                             </a>
                             <h4 class="itemName">Air Conditioning</h4>
@@ -88,7 +88,7 @@
                         <div class="col">
                             <a href="SellItem.php?itemName=geyser">
                                 <figure class="figure">
-                                    <img src="../Images/Page 3.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/ProdImages/geyser.jpeg" class="figure-img img-fluid rounded" alt="...">
                                 </figure>
                             </a>
                             <h4 class="itemName">Geyser</h4>
@@ -102,7 +102,7 @@
                         <div class="col">
                             <a href="SellItem.php?itemName=laptop">
                                 <figure class="figure">
-                                    <img src="../Images/Page 4.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/ProdImages/laptop.jpg" class="figure-img img-fluid rounded" alt="...">
                                 </figure>
                             </a>
                             <h4 class="itemName">Laptop</h4>
@@ -110,7 +110,7 @@
                         <div class="col" id="colmid">
                             <a href="SellItem.php?itemName=television">
                                 <figure class="figure">
-                                    <img src="../Images/Page 5.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/ProdImages/tv.jpg" class="figure-img img-fluid rounded" alt="...">
                                 </figure>
                             </a>
                             <h4 class="itemName">Television</h4>
@@ -118,7 +118,7 @@
                         <div class="col">
                             <a href="SellItem.php?itemName=mobile">
                                 <figure class="figure">
-                                    <img src="../Images/Page 6.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/ProdImages/smartphone.jpg" class="figure-img img-fluid rounded" alt="...">
                                 </figure>
                             </a>
                             <h4 class="itemName">Mobile</h4>
@@ -131,7 +131,7 @@
                         <div class="col">
                             <a href="SellItem.php?itemName=desktop">
                                 <figure class="figure">
-                                    <img src="../Images/Page 7.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/ProdImages/desktop.jpg" class="figure-img img-fluid rounded" alt="...">
                                 </figure>
                             </a>
                             <h4 class="itemName">Desktop</h4>
@@ -147,7 +147,7 @@
                         <div class="col">
                             <a href="SellItem.php?itemName=xbox">
                                 <figure class="figure">
-                                    <img src="../Images/Page 9.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/ProdImages/xbox.jpg" class="figure-img img-fluid rounded" alt="...">
                                 </figure>
                             </a>
                             <h4 class="itemName">XBox</h4>
@@ -160,30 +160,32 @@
                         <div class="col">
                             <a href="SellItem.php?itemName=radio">
                                 <figure class="figure">
-                                    <img src="../Images/Page 10.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/ProdImages/radio.jpg" class="figure-img img-fluid rounded" alt="...">
                                 </figure>
                             </a>
                             <h4 class="itemName">Radio</h4>
                         </div>
                         <div class="col" id="colmid">
-                            <a href="SellItem.php?itemName=headphone">
+                            <a href="SellItem.php?itemName=hardisk">
                                 <figure class="figure">
-                                    <img src="../Images/Page 11.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/ProdImages/harddisk.jpeg" class="figure-img img-fluid rounded" alt="...">
                                 </figure>
                             </a>
-                            <h4 class="itemName">Headphone</h4>
+                            <h4 class="itemName">Hard Disk</h4>
                         </div>
                         <div class="col">
-                            <a href="SellItem.php?itemName=charger">
+                            <a href="SellItem.php?itemName=other">
                                 <figure class="figure">
-                                    <img src="../Images/Page 12.jpeg" class="figure-img img-fluid rounded" alt="...">
+                                    <img src="../Images/otherAppliance.jpeg" class="figure-img img-fluid rounded"
+                                        alt="...">
                                 </figure>
                             </a>
-                            <h4 class="itemName">Charger</h4>
+
+                            <h4 class="itemName">Other</h4>
                         </div>
                     </div>
                 </div>
-                <div class="container text-center">
+                <!-- <div class="container text-center">
                     <div class="row">
                         <div class="col">
                             <a href="SellItem.php?itemName=cddvd">
@@ -212,7 +214,7 @@
                             <h4 class="itemName">Other</h4>
                         </div>
                     </div>
-                </div>
+                </div> -->
             </section>
         </div>
     </div>

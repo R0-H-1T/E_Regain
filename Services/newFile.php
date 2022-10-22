@@ -46,7 +46,7 @@
 
 
 <?php
- 
+  
     $user = "UPDATE users SET UserAddress = '$add' WHERE userID = '{$_SESSION["UserID"]}'";
     // $user = "INSERT INTO users(UserAddress) VALUE('$add') where userID = '{$_SESSION["UserID"]}'";
 
@@ -54,7 +54,7 @@
             VALUE('{$_SESSION["UserID"]}', 1, NOW(), '$arr', '$fileupload', '$productType', '$productCategory')";
 
 
-    echo $fileupload;
+    //echo $fileupload;
     //for user table
     if (mysqli_query($conn, $user)) {
          //for products table 

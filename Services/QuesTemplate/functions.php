@@ -119,6 +119,36 @@ function cdnPoppinsAndJS(){
   ';
 }
 
+
+
+
+function carouselButtons(){
+
+
+  //used in inputDB  for adding the button field for the user to look through images;
+  echo '
+  
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+</div>
+<div class="col-7" style=" display:flex; justify-content:center; background-color:#f0f0f0;">
+
+<!-- displaying details of what user has selected -->
+<div class="prodDetails" style=" width: 400px; margin-top: 50px;">
+    
+    <h2 class="card-title" style="margin-bottom: 20px;">What you have selected:</h2>
+  
+  ';
+}
+
 // function setStatus($adminResponse){
 //   if($adminResponse == "pending"){
 //     echo "<b><?php echo $row[]"

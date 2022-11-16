@@ -18,7 +18,7 @@
                 <div class="row row-cols-1 row-cols-md-3 g-4">
         <?php
         
-        $sql = "SELECT productID, productCategory, userResponse ,productPrice,productDate, productAns, productType, adminResponse, productImgPath FROM products join users on Email = '{$_SESSION["UEmail"]}' and user_id = {$_SESSION["UserID"]}";
+        $sql = "SELECT productID, productCategory, userResponse ,productPrice,productDate, productAns, productType, adminResponse, productImgPath FROM products join users on Email = '{$_SESSION["UEmail"]}' and user_id = {$_SESSION["UserID"]} ORDER BY productDate desc";
 
         $result = mysqli_query($conn, $sql);
 
